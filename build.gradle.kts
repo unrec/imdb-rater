@@ -1,3 +1,4 @@
+import io.gitlab.arturbosch.detekt.Detekt
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 version = "0.0.1-SNAPSHOT"
@@ -16,6 +17,8 @@ plugins {
     kotlin("jvm") version kotlinVersion
     kotlin("plugin.spring") version kotlinVersion
     id("org.springframework.boot") version "2.5.2"
+    id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
+    id("io.gitlab.arturbosch.detekt") version "1.21.0"
     id("maven-publish")
 }
 
@@ -38,8 +41,14 @@ dependencies {
     // test
     testImplementation(group = "org.jetbrains.kotlin", name = "kotlin-test", version = Versions.KOTLIN)
     testImplementation(group = "io.kotest", name = "kotest-assertions-core-jvm", version = "5.5.1")
-
 }
+
+detekt {
+    buildUponDefaultConfig = true
+    allRules = false
+    parallel = true
+}
+
 tasks.apply {
     test {
         useJUnitPlatform()
@@ -49,6 +58,16 @@ tasks.apply {
         kotlinOptions {
             freeCompilerArgs = listOf("-Xjsr305=strict", "-Xinline-classes")
             jvmTarget = "11"
+        }
+    }
+
+    withType<Detekt>().configureEach {
+        jvmTarget = "1.8"
+        reports {
+            with(html) {
+                required.set(true)
+                outputLocation.set(file("$buildDir/reports/detekt/detekt.html"))
+            }
         }
     }
 }
