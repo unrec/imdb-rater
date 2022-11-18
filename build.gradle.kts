@@ -44,8 +44,8 @@ dependencies {
 }
 
 detekt {
-    buildUponDefaultConfig = true
-    allRules = false
+    config = files("$projectDir/detekt-config.yml")
+    allRules = true
     parallel = true
 }
 
