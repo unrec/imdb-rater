@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: imdb-searcher
+
+logging.level:
+  ROOT: INFO
+  org.springframework: DEBUG
+  com.unrec.imdb.rater: DEBUG
