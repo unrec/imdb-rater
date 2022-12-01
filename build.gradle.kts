@@ -31,9 +31,10 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
 
     // graphql
-    implementation("com.graphql-java-kickstart", "graphql-spring-boot-starter", Versions.GRAPHQL)
-    testImplementation("com.graphql-java-kickstart", "graphql-spring-boot-starter-test", Versions.GRAPHQL)
-    runtimeOnly("com.graphql-java-kickstart:graphiql-spring-boot-starter:11.1.0")
+    implementation("org.springframework.boot:spring-boot-starter-graphql")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.graphql:spring-graphql-test")
+    implementation("com.graphql-java:graphql-java-extended-scalars:19.1")
 
     // etc
     implementation("com.unrec", "imdb-csv-parser", "0.0.1")
