@@ -37,7 +37,7 @@ dependencies {
     implementation("com.graphql-java:graphql-java-extended-scalars:19.1")
 
     // etc
-    implementation("com.unrec", "imdb-csv-parser", "0.0.2")
+    implementation("com.unrec", "imdb-csv-parser", "0.0.3")
 
     // test
     testImplementation(group = "org.jetbrains.kotlin", name = "kotlin-test", version = Versions.KOTLIN)

@@ -1,0 +1,19 @@
+query {
+    find(
+        filepath: "ratings/ratings_andrei.csv",
+        params: {
+            rating: 10,
+#            year: 1996
+            director: "Quentin Tarantino"
+        }
+    ){
+        title
+        year
+        genres
+        directors
+        userRating
+#        year
+#        userRating
+#        dateRated
+    }
+}
