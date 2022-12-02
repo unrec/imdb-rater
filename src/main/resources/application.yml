@@ -1,8 +1,13 @@
 spring:
   application:
     name: imdb-searcher
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
 
 logging.level:
   ROOT: INFO
   org.springframework: DEBUG
+  org.springframework.boot.autoconfigure.logging: INFO
   com.unrec.imdb.rater: DEBUG

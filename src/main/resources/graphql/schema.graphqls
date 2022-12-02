@@ -1,0 +1,29 @@
+type Query {
+    find(filepath: String!, params: SearchParams): [RatedItem]
+}
+
+type RatedItem {
+    id: String!,
+    userRating: Float!,
+    dateRated: Date!
+    title: String!,
+    url: String!,
+    titleType: String!,
+    imdbRating: Float!,
+    runtime: Int!,
+    year: Int!,
+    genres: String!,
+    votes: Int!,
+    releaseDate: Date!,
+    directors: String!
+}
+
+input SearchParams {
+    rating: Float,
+    year: Int,
+    title: String,
+    director: String
+}
+
+scalar Date
+
