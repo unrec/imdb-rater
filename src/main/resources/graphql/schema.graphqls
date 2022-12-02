@@ -1,5 +1,7 @@
+
 type Query {
     find(filepath: String!, params: SearchParams): [RatedItem]
+    compare(aFilepath: String!, bFilepath: String!, params: CompareParams): [RatedItem]
 }
 
 type RatedItem {
@@ -25,5 +27,11 @@ input SearchParams {
     director: String
 }
 
+input CompareParams {
+    rating: Float,
+    year: Int,
+    title: String,
+    director: String
+}
 scalar Date
 

@@ -22,6 +22,20 @@ class RatingService {
             .map { it.toModel() }
     }
 
+    fun compare(params: SearchParams, aFilepath: String, bFilepath: String): List<RatedItem> {
+        val aItems = aFilepath.toInputStream()
+            .let { parser.parse(it) }
+            .filterAll(params, predicates)
+            .map{ it.toModel()}
+
+        val bItems = bFilepath.toInputStream()
+            .let { parser.parse(it) }
+            .filterAll(params, predicates)
+            .map { it.toModel() }
+
+        return aItems.filter { bItems.contains(it) }
+    }
+
     private fun String.toInputStream(): InputStream {
         return RatingService::class.java.classLoader.getResourceAsStream(this)
             ?: throw InputStreamException(this)

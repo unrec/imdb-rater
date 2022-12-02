@@ -19,6 +19,15 @@ class RatingController(private val ratingService: RatingService) {
         return ratingService.filter(params, filepath)
     }
 
+    @QueryMapping
+    fun compare(
+        @Argument aFilepath: String,
+        @Argument bFilepath: String,
+        @Argument params: SearchParams
+    ): List<RatedItem> {
+        return ratingService.compare(params, aFilepath, bFilepath)
+    }
+
     @SchemaMapping
     fun genres(item: RatedItem) = item.genres.toSingleString()
 
