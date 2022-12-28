@@ -9,6 +9,8 @@ fun String.toInputStream(): InputStream {
         ?: throw InputStreamException(this)
 }
 
+fun Iterable<String>?.toSingleString() = this?.joinToString { it } ?: ""
+
 fun String.reformatTitleTypeName(): String {
     return this
         .lowercase()

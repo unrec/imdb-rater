@@ -3,6 +3,7 @@ package com.unrec.imdb.rater.controller
 import com.unrec.imdb.rater.model.RatedItem
 import com.unrec.imdb.rater.model.SearchParams
 import com.unrec.imdb.rater.service.RatingService
+import com.unrec.imdb.rater.utils.toSingleString
 import org.springframework.graphql.data.method.annotation.Argument
 import org.springframework.graphql.data.method.annotation.QueryMapping
 import org.springframework.graphql.data.method.annotation.SchemaMapping
