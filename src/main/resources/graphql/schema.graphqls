@@ -7,7 +7,7 @@ type Query {
 
 type RatedItem {
     id: String!,
-    userRating: Float!,
+    userRating: Int!,
     dateRated: Date!
     title: String!,
     url: String!,
