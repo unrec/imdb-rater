@@ -9,6 +9,7 @@ import com.unrec.imdb.rater.model.RateStatistics
 import com.unrec.imdb.rater.model.RatedItem
 import com.unrec.imdb.rater.model.SearchParams
 import com.unrec.imdb.rater.model.TitleTypeStatistics
+import com.unrec.imdb.rater.model.YearStatistics
 import com.unrec.imdb.rater.model.toModel
 import com.unrec.imdb.rater.utils.getOrZero
 import com.unrec.imdb.rater.utils.reformatTitleTypeName
@@ -67,11 +68,20 @@ class RatingService {
             .map { TitleTypeStatistics(it.first.name.reformatTitleTypeName(), it.second) }
     }
 
-    private fun List<ParsedItem>.mostWatchedYear(): Short? {
-        return this
-            .groupingBy { it.year }
+    private fun List<ParsedItem>.mostWatchedYear(): YearStatistics {
+        val (year, count) = this
+            .groupingBy { it.year!! }
             .eachCount()
-            .maxByOrNull { it.value }?.key
+            .maxByOrNull { it.value }!!
+
+        return YearStatistics(year = year, count = count, averageRating = this.countAverageByYear(year))
+    }
+
+    private fun List<ParsedItem>.countAverageByYear(year: Short): Float {
+        return this
+            .filter { it.year == year }
+            .map { it.userRating!! }
+            .average().toFloat()
     }
 
     private fun List<ParsedItem>.mostWatchedGenres(): List<String> {

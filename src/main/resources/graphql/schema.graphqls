@@ -39,9 +39,15 @@ type RateStatistics {
     totalItems: Int,
     totalRuntime: String,
     typesCount: [TitleTypeStatistics]
-    mostWatchedYear: Int,
+    mostWatchedYear: YearStatistics,
     mostWatchedGenres: String,
     mostWatchedDirectors: [DirectorStatistics],
+}
+
+type YearStatistics {
+    year: Int,
+    count: Int
+    averageRating: Float
 }
 
 type TitleTypeStatistics {
