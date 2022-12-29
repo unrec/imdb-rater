@@ -40,7 +40,7 @@ type RateStatistics {
     totalRuntime: String,
     typesCount: [TitleTypeStatistics]
     mostWatchedYear: Int,
-    mostWatchedGenres: [String],
+    mostWatchedGenres: String,
     mostWatchedDirectors: [DirectorStatistics],
 }
 
