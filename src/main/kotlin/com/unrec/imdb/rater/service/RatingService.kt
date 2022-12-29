@@ -15,6 +15,8 @@ import com.unrec.imdb.rater.utils.getOrZero
 import com.unrec.imdb.rater.utils.reformatTitleTypeName
 import com.unrec.imdb.rater.utils.toInputStream
 import org.springframework.stereotype.Service
+import java.math.BigDecimal
+import java.math.RoundingMode
 
 @Service
 class RatingService {
@@ -77,11 +79,12 @@ class RatingService {
         return YearStatistics(year = year, count = count, averageRating = this.countAverageByYear(year))
     }
 
-    private fun List<ParsedItem>.countAverageByYear(year: Short): Float {
+    private fun List<ParsedItem>.countAverageByYear(year: Short): BigDecimal {
         return this
             .filter { it.year == year }
             .map { it.userRating!! }
-            .average().toFloat()
+            .average()
+            .toBigDecimal().setScale(2, RoundingMode.HALF_DOWN)
     }
 
     private fun List<ParsedItem>.mostWatchedGenres(): List<String> {

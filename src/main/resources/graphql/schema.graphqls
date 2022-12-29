@@ -47,7 +47,7 @@ type RateStatistics {
 type YearStatistics {
     year: Int,
     count: Int
-    averageRating: Float
+    averageRating: BigDecimal
 }
 
 type TitleTypeStatistics {
@@ -61,3 +61,4 @@ type DirectorStatistics {
 }
 
 scalar Date
+scalar BigDecimal
