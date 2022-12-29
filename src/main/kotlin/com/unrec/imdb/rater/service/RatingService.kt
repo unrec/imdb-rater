@@ -11,7 +11,6 @@ import com.unrec.imdb.rater.model.SearchParams
 import com.unrec.imdb.rater.model.TitleTypeStatistics
 import com.unrec.imdb.rater.model.toModel
 import com.unrec.imdb.rater.utils.getOrZero
-import com.unrec.imdb.rater.utils.minutesToDurationString
 import com.unrec.imdb.rater.utils.reformatTitleTypeName
 import com.unrec.imdb.rater.utils.toInputStream
 import org.springframework.stereotype.Service
@@ -48,7 +47,7 @@ class RatingService {
 
         return RateStatistics(
             totalItems = items.size,
-            totalRuntime = items.sumRuntime().minutesToDurationString(),
+            totalRuntime = items.sumRuntime(),
             typesCount = items.countTypes(),
             mostWatchedYear = items.mostWatchedYear(),
             mostWatchedGenres = items.mostWatchedGenres(),

@@ -35,8 +35,6 @@ class RatingController(private val ratingService: RatingService) {
     @SchemaMapping
     fun directors(item: RatedItem) = item.directors.toSingleString()
 
-    private fun Iterable<String>?.toSingleString() =
-        this?.joinToString { it } ?: ""
 }
 
 
