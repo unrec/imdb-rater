@@ -106,6 +106,14 @@ class RatingService {
             .toList()
             .sortedBy { (_, value) -> value }
             .takeLast(5)
-            .map { DirectorStatistics(it.first, it.second) }
+            .map { DirectorStatistics(name = it.first, count = it.second, titles = this.titlesByDirector(it.first)) }
+    }
+
+    private fun List<ParsedItem>.titlesByDirector(directorName: String): List<RatedItem> {
+        return this
+            .filter { it.directors!!.contains(directorName) }
+            .sortedBy { it.year }
+            .map { it.toModel() }
+
     }
 }

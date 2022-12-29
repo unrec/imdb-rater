@@ -58,6 +58,7 @@ type TitleTypeStatistics {
 type DirectorStatistics {
     name: String,
     count: Int,
+    titles: [RatedItem]
 }
 
 scalar Date
