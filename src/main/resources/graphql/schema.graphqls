@@ -38,7 +38,8 @@ input CompareParams {
 type RateStatistics {
     totalItems: Int,
     totalRuntime: String,
-    typesCount: [TitleTypeStatistics]
+    typesCount: [TitleTypeStatistics],
+    yearCount: [YearStatistics],
     mostWatchedYear: YearStatistics,
     mostWatchedGenres: String,
     mostWatchedDirectors: [DirectorStatistics],
