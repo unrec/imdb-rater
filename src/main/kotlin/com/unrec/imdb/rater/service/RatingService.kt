@@ -52,7 +52,8 @@ class RatingService {
             totalItems = items.size,
             totalRuntime = items.sumRuntime(),
             typesCount = items.countTypes(),
-            yearCount = items.countPerYear(),
+            releaseYearCount = items.countPerReleaseYear(),
+            rateYearCount = items.countPerRateYear(),
             mostWatchedYear = items.mostWatchedYear(),
             mostWatchedGenres = items.mostWatchedGenres(),
             mostWatchedDirectors = items.mostWatchedDirectors()
@@ -71,13 +72,22 @@ class RatingService {
             .map { TitleTypeStatistics(it.first.name.reformatTitleTypeName(), it.second) }
     }
 
-    private fun List<ParsedItem>.countPerYear(): List<YearStatistics> {
+    private fun List<ParsedItem>.countPerReleaseYear(): List<YearStatistics> {
         return this
             .groupingBy { it.year!! }
             .eachCount()
             .toList()
             .sortedBy { (year, _) -> year }
             .map { YearStatistics(it.first, it.second, this.countAverageByYear(it.first)) }
+    }
+
+    private fun List<ParsedItem>.countPerRateYear(): List<YearStatistics> {
+        return this
+            .groupingBy { it.dateRated!!.year }
+            .eachCount()
+            .toList()
+            .sortedBy { (year, _) -> year }
+            .map { YearStatistics(it.first.toShort(), it.second, this.countAverageByYear(it.first.toShort())) }
     }
 
     private fun List<ParsedItem>.mostWatchedYear(): YearStatistics {
