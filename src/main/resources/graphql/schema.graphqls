@@ -1,4 +1,3 @@
-
 type Query {
     find(filepath: String!, params: SearchParams): [RatedItem]
     compare(aFilepath: String!, bFilepath: String!, params: CompareParams): [RatedItem]
@@ -38,6 +37,7 @@ input CompareParams {
 type RateStatistics {
     totalItems: Int,
     totalRuntime: String,
+    ratingCount: [RatingStatistics],
     typesCount: [TitleTypeStatistics],
     releaseYearCount: [YearStatistics],
     rateYearCount: [YearStatistics],
@@ -46,15 +46,20 @@ type RateStatistics {
     mostWatchedDirectors: [DirectorStatistics],
 }
 
-type YearStatistics {
-    year: Int,
+type RatingStatistics {
+    rating: Int,
     count: Int
-    averageRating: BigDecimal
 }
 
 type TitleTypeStatistics {
     titleType: String,
     count: Int,
+}
+
+type YearStatistics {
+    year: Int,
+    count: Int
+    averageRating: BigDecimal
 }
 
 type DirectorStatistics {

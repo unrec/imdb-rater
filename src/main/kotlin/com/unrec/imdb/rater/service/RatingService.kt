@@ -7,6 +7,7 @@ import com.unrec.imdb.rater.filter.filterAll
 import com.unrec.imdb.rater.model.DirectorStatistics
 import com.unrec.imdb.rater.model.RateStatistics
 import com.unrec.imdb.rater.model.RatedItem
+import com.unrec.imdb.rater.model.RatingStatistics
 import com.unrec.imdb.rater.model.SearchParams
 import com.unrec.imdb.rater.model.TitleTypeStatistics
 import com.unrec.imdb.rater.model.YearStatistics
@@ -52,7 +53,8 @@ class RatingService {
             totalItems = items.size,
             totalRuntime = items.sumRuntime(),
             typesCount = items.countTypes(),
-            releaseYearCount = items.countPerReleaseYear(),
+            ratingCount = items.countByRating(),
+            releaseYearCount = items.countByReleaseYear(),
             rateYearCount = items.countPerRateYear(),
             mostWatchedYear = items.mostWatchedYear(),
             mostWatchedGenres = items.mostWatchedGenres(),
@@ -64,6 +66,15 @@ class RatingService {
         return this.sumOf { it.runtime.getOrZero() }
     }
 
+    private fun List<ParsedItem>.countByRating(): List<RatingStatistics> {
+        return this
+            .groupingBy { it.userRating!! }
+            .eachCount()
+            .toList()
+            .sortedBy { (rating, _) -> rating }
+            .map { RatingStatistics(it.first.toShort(), it.second) }
+    }
+
     private fun List<ParsedItem>.countTypes(): List<TitleTypeStatistics> {
         return this
             .groupingBy { it.titleType!! }
@@ -72,7 +83,7 @@ class RatingService {
             .map { TitleTypeStatistics(it.first.name.reformatTitleTypeName(), it.second) }
     }
 
-    private fun List<ParsedItem>.countPerReleaseYear(): List<YearStatistics> {
+    private fun List<ParsedItem>.countByReleaseYear(): List<YearStatistics> {
         return this
             .groupingBy { it.year!! }
             .eachCount()
