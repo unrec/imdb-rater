@@ -38,6 +38,7 @@ type UserRateStatistics {
     totalItems: Int,
     totalRuntime: String,
     averageDeviation: Float,
+    releaseYearRated: [YearStatistics],
     ratingCount: [RatingStatistics],
     typesCount: [TitleTypeStatistics],
     releaseYearCount: [YearStatistics],

@@ -54,10 +54,11 @@ class RatingService {
             totalItems = items.size,
             totalRuntime = items.sumRuntime(),
             averageDeviation = items.averageDeviation(),
+            releaseYearRated = items.releaseYearRated(),
             typesCount = items.countTypes(),
             ratingCount = items.countByRating(),
             releaseYearCount = items.countByReleaseYear(),
-            rateYearCount = items.countPerRateYear(),
+            rateYearCount = items.countByRateYear(),
             mostWatchedYear = items.mostWatchedYear(),
             mostWatchedGenres = items.mostWatchedGenres(),
             mostWatchedDirectors = items.mostWatchedDirectors()
@@ -72,6 +73,12 @@ class RatingService {
         return (this.map { abs(it.userRating!! - it.imdbRating!!) }.sum() / this.size)
             .toBigDecimal()
             .setScale(4, RoundingMode.HALF_DOWN)
+    }
+
+    private fun List<ParsedItem>.releaseYearRated(): List<YearStatistics> {
+        return this
+            .filter { it.dateRated!!.year == it.year!!.toInt() }
+            .countByReleaseYear()
     }
 
     private fun List<ParsedItem>.countByRating(): List<RatingStatistics> {
@@ -100,7 +107,7 @@ class RatingService {
             .map { YearStatistics(it.first, it.second, this.countAverageByYear(it.first)) }
     }
 
-    private fun List<ParsedItem>.countPerRateYear(): List<YearStatistics> {
+    private fun List<ParsedItem>.countByRateYear(): List<YearStatistics> {
         return this
             .groupingBy { it.dateRated!!.year }
             .eachCount()
