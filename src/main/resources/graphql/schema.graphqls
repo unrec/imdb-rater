@@ -37,6 +37,7 @@ input CompareParams {
 type UserRateStatistics {
     totalItems: Int,
     totalRuntime: String,
+    averageDeviation: Float,
     ratingCount: [RatingStatistics],
     typesCount: [TitleTypeStatistics],
     releaseYearCount: [YearStatistics],

@@ -1,8 +1,11 @@
 package com.unrec.imdb.rater.model
 
+import java.math.BigDecimal
+
 data class UserRateStatistics(
     val totalItems: Int? = null,
     val totalRuntime: Int? = null,
+    val averageDeviation: BigDecimal? = null,
     val ratingCount: List<RatingStatistics>? = null,
     val typesCount: List<TitleTypeStatistics>? = null,
     val releaseYearCount: List<YearStatistics>? = null,

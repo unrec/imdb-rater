@@ -5,11 +5,11 @@ import com.unrec.imdb.csv.parser.ParsedItem
 import com.unrec.imdb.rater.filter.FilterPredicates.predicates
 import com.unrec.imdb.rater.filter.filterAll
 import com.unrec.imdb.rater.model.DirectorStatistics
-import com.unrec.imdb.rater.model.UserRateStatistics
 import com.unrec.imdb.rater.model.RatedItem
 import com.unrec.imdb.rater.model.RatingStatistics
 import com.unrec.imdb.rater.model.SearchParams
 import com.unrec.imdb.rater.model.TitleTypeStatistics
+import com.unrec.imdb.rater.model.UserRateStatistics
 import com.unrec.imdb.rater.model.YearStatistics
 import com.unrec.imdb.rater.model.toModel
 import com.unrec.imdb.rater.utils.getOrZero
@@ -18,6 +18,7 @@ import com.unrec.imdb.rater.utils.toInputStream
 import org.springframework.stereotype.Service
 import java.math.BigDecimal
 import java.math.RoundingMode
+import kotlin.math.abs
 
 @Service
 class RatingService {
@@ -52,6 +53,7 @@ class RatingService {
         return UserRateStatistics(
             totalItems = items.size,
             totalRuntime = items.sumRuntime(),
+            averageDeviation = items.averageDeviation(),
             typesCount = items.countTypes(),
             ratingCount = items.countByRating(),
             releaseYearCount = items.countByReleaseYear(),
@@ -64,6 +66,12 @@ class RatingService {
 
     private fun List<ParsedItem>.sumRuntime(): Int {
         return this.sumOf { it.runtime.getOrZero() }
+    }
+
+    private fun List<ParsedItem>.averageDeviation(): BigDecimal {
+        return (this.map { abs(it.userRating!! - it.imdbRating!!) }.sum() / this.size)
+            .toBigDecimal()
+            .setScale(4, RoundingMode.HALF_DOWN)
     }
 
     private fun List<ParsedItem>.countByRating(): List<RatingStatistics> {
