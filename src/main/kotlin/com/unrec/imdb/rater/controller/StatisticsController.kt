@@ -1,6 +1,6 @@
 package com.unrec.imdb.rater.controller
 
-import com.unrec.imdb.rater.model.RateStatistics
+import com.unrec.imdb.rater.model.UserRateStatistics
 import com.unrec.imdb.rater.service.RatingService
 import com.unrec.imdb.rater.utils.minutesToDurationString
 import com.unrec.imdb.rater.utils.toSingleString
@@ -13,13 +13,13 @@ import org.springframework.stereotype.Controller
 class StatisticsController(private val ratingService: RatingService) {
 
     @QueryMapping
-    fun statistics(@Argument filepath: String): RateStatistics {
+    fun statistics(@Argument filepath: String): UserRateStatistics {
         return ratingService.getStatistics(filepath)
     }
 
     @SchemaMapping
-    fun totalRuntime(rateStatistics: RateStatistics) = rateStatistics.totalRuntime.minutesToDurationString()
+    fun totalRuntime(statistics: UserRateStatistics) = statistics.totalRuntime.minutesToDurationString()
 
     @SchemaMapping
-    fun mostWatchedGenres(rateStatistics: RateStatistics) = rateStatistics.mostWatchedGenres.toSingleString()
+    fun mostWatchedGenres(statistics: UserRateStatistics) = statistics.mostWatchedGenres.toSingleString()
 }

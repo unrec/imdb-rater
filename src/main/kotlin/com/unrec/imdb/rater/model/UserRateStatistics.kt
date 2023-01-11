@@ -1,6 +1,6 @@
 package com.unrec.imdb.rater.model
 
-data class RateStatistics(
+data class UserRateStatistics(
     val totalItems: Int? = null,
     val totalRuntime: Int? = null,
     val ratingCount: List<RatingStatistics>? = null,

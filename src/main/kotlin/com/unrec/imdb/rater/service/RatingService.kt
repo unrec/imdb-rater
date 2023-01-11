@@ -5,7 +5,7 @@ import com.unrec.imdb.csv.parser.ParsedItem
 import com.unrec.imdb.rater.filter.FilterPredicates.predicates
 import com.unrec.imdb.rater.filter.filterAll
 import com.unrec.imdb.rater.model.DirectorStatistics
-import com.unrec.imdb.rater.model.RateStatistics
+import com.unrec.imdb.rater.model.UserRateStatistics
 import com.unrec.imdb.rater.model.RatedItem
 import com.unrec.imdb.rater.model.RatingStatistics
 import com.unrec.imdb.rater.model.SearchParams
@@ -45,11 +45,11 @@ class RatingService {
         return aItems.filter { bItems.contains(it) }
     }
 
-    fun getStatistics(filepath: String): RateStatistics {
+    fun getStatistics(filepath: String): UserRateStatistics {
         val items: List<ParsedItem> = filepath.toInputStream()
             .let { parser.parse(it) }
 
-        return RateStatistics(
+        return UserRateStatistics(
             totalItems = items.size,
             totalRuntime = items.sumRuntime(),
             typesCount = items.countTypes(),
