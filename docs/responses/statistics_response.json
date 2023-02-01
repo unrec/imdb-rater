@@ -1,0 +1,1132 @@
+{
+  "data": {
+    "statistics": {
+      "releaseYearRated": [
+        {
+          "year": 2009,
+          "count": 3,
+          "averageRating": 9.33
+        },
+        {
+          "year": 2010,
+          "count": 21,
+          "averageRating": 6.90
+        },
+        {
+          "year": 2011,
+          "count": 24,
+          "averageRating": 7.33
+        },
+        {
+          "year": 2012,
+          "count": 26,
+          "averageRating": 6.96
+        },
+        {
+          "year": 2013,
+          "count": 53,
+          "averageRating": 7.45
+        },
+        {
+          "year": 2014,
+          "count": 37,
+          "averageRating": 7.19
+        },
+        {
+          "year": 2015,
+          "count": 29,
+          "averageRating": 7.48
+        },
+        {
+          "year": 2016,
+          "count": 22,
+          "averageRating": 7.14
+        },
+        {
+          "year": 2017,
+          "count": 22,
+          "averageRating": 7.41
+        },
+        {
+          "year": 2018,
+          "count": 16,
+          "averageRating": 6.94
+        },
+        {
+          "year": 2019,
+          "count": 19,
+          "averageRating": 7.00
+        },
+        {
+          "year": 2020,
+          "count": 14,
+          "averageRating": 7.93
+        },
+        {
+          "year": 2021,
+          "count": 15,
+          "averageRating": 7.47
+        },
+        {
+          "year": 2022,
+          "count": 11,
+          "averageRating": 6.55
+        }
+      ],
+      "averageDeviation": 0.8576,
+      "ratingCount": [
+        {
+          "rating": 1,
+          "count": 1
+        },
+        {
+          "rating": 2,
+          "count": 3
+        },
+        {
+          "rating": 3,
+          "count": 14
+        },
+        {
+          "rating": 4,
+          "count": 24
+        },
+        {
+          "rating": 5,
+          "count": 133
+        },
+        {
+          "rating": 6,
+          "count": 323
+        },
+        {
+          "rating": 7,
+          "count": 582
+        },
+        {
+          "rating": 8,
+          "count": 598
+        },
+        {
+          "rating": 9,
+          "count": 358
+        },
+        {
+          "rating": 10,
+          "count": 163
+        }
+      ],
+      "totalItems": 2199,
+      "totalRuntime": "163d 6h 38m",
+      "typesCount": [
+        {
+          "titleType": "Movie",
+          "count": 1914
+        },
+        {
+          "titleType": "TV Mini Series",
+          "count": 15
+        },
+        {
+          "titleType": "TV Series",
+          "count": 66
+        },
+        {
+          "titleType": "TV Movie",
+          "count": 5
+        },
+        {
+          "titleType": "TV Episode",
+          "count": 164
+        },
+        {
+          "titleType": "TV Special",
+          "count": 3
+        },
+        {
+          "titleType": "Short",
+          "count": 9
+        },
+        {
+          "titleType": "Music Video",
+          "count": 6
+        },
+        {
+          "titleType": "Video Game",
+          "count": 14
+        },
+        {
+          "titleType": "Video",
+          "count": 3
+        }
+      ],
+      "releaseYearCount": [
+        {
+          "year": 1921,
+          "count": 1,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1922,
+          "count": 1,
+          "averageRating": 9.00
+        },
+        {
+          "year": 1925,
+          "count": 2,
+          "averageRating": 8.50
+        },
+        {
+          "year": 1926,
+          "count": 1,
+          "averageRating": 9.00
+        },
+        {
+          "year": 1927,
+          "count": 2,
+          "averageRating": 8.50
+        },
+        {
+          "year": 1930,
+          "count": 1,
+          "averageRating": 9.00
+        },
+        {
+          "year": 1931,
+          "count": 2,
+          "averageRating": 8.50
+        },
+        {
+          "year": 1932,
+          "count": 2,
+          "averageRating": 9.50
+        },
+        {
+          "year": 1933,
+          "count": 1,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1934,
+          "count": 1,
+          "averageRating": 7.00
+        },
+        {
+          "year": 1936,
+          "count": 2,
+          "averageRating": 9.00
+        },
+        {
+          "year": 1937,
+          "count": 1,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1938,
+          "count": 4,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1939,
+          "count": 5,
+          "averageRating": 8.60
+        },
+        {
+          "year": 1940,
+          "count": 8,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1941,
+          "count": 12,
+          "averageRating": 7.92
+        },
+        {
+          "year": 1942,
+          "count": 6,
+          "averageRating": 7.33
+        },
+        {
+          "year": 1943,
+          "count": 4,
+          "averageRating": 8.25
+        },
+        {
+          "year": 1944,
+          "count": 9,
+          "averageRating": 8.56
+        },
+        {
+          "year": 1945,
+          "count": 9,
+          "averageRating": 7.67
+        },
+        {
+          "year": 1946,
+          "count": 14,
+          "averageRating": 7.64
+        },
+        {
+          "year": 1947,
+          "count": 13,
+          "averageRating": 7.31
+        },
+        {
+          "year": 1948,
+          "count": 17,
+          "averageRating": 7.82
+        },
+        {
+          "year": 1949,
+          "count": 15,
+          "averageRating": 7.40
+        },
+        {
+          "year": 1950,
+          "count": 19,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1951,
+          "count": 10,
+          "averageRating": 7.00
+        },
+        {
+          "year": 1952,
+          "count": 13,
+          "averageRating": 7.92
+        },
+        {
+          "year": 1953,
+          "count": 14,
+          "averageRating": 8.14
+        },
+        {
+          "year": 1954,
+          "count": 11,
+          "averageRating": 7.91
+        },
+        {
+          "year": 1955,
+          "count": 12,
+          "averageRating": 7.75
+        },
+        {
+          "year": 1956,
+          "count": 5,
+          "averageRating": 7.80
+        },
+        {
+          "year": 1957,
+          "count": 13,
+          "averageRating": 7.69
+        },
+        {
+          "year": 1958,
+          "count": 3,
+          "averageRating": 8.67
+        },
+        {
+          "year": 1959,
+          "count": 6,
+          "averageRating": 8.83
+        },
+        {
+          "year": 1960,
+          "count": 7,
+          "averageRating": 7.86
+        },
+        {
+          "year": 1961,
+          "count": 7,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1962,
+          "count": 7,
+          "averageRating": 8.29
+        },
+        {
+          "year": 1963,
+          "count": 6,
+          "averageRating": 8.33
+        },
+        {
+          "year": 1964,
+          "count": 7,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1965,
+          "count": 5,
+          "averageRating": 7.80
+        },
+        {
+          "year": 1966,
+          "count": 7,
+          "averageRating": 8.29
+        },
+        {
+          "year": 1967,
+          "count": 5,
+          "averageRating": 8.40
+        },
+        {
+          "year": 1968,
+          "count": 5,
+          "averageRating": 9.00
+        },
+        {
+          "year": 1969,
+          "count": 9,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1970,
+          "count": 3,
+          "averageRating": 7.67
+        },
+        {
+          "year": 1971,
+          "count": 8,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1972,
+          "count": 6,
+          "averageRating": 8.83
+        },
+        {
+          "year": 1973,
+          "count": 7,
+          "averageRating": 8.00
+        },
+        {
+          "year": 1974,
+          "count": 5,
+          "averageRating": 8.60
+        },
+        {
+          "year": 1975,
+          "count": 11,
+          "averageRating": 8.73
+        },
+        {
+          "year": 1976,
+          "count": 8,
+          "averageRating": 7.00
+        },
+        {
+          "year": 1977,
+          "count": 7,
+          "averageRating": 8.14
+        },
+        {
+          "year": 1978,
+          "count": 5,
+          "averageRating": 8.20
+        },
+        {
+          "year": 1979,
+          "count": 8,
+          "averageRating": 8.50
+        },
+        {
+          "year": 1980,
+          "count": 7,
+          "averageRating": 8.86
+        },
+        {
+          "year": 1981,
+          "count": 8,
+          "averageRating": 7.37
+        },
+        {
+          "year": 1982,
+          "count": 8,
+          "averageRating": 7.87
+        },
+        {
+          "year": 1983,
+          "count": 12,
+          "averageRating": 8.25
+        },
+        {
+          "year": 1984,
+          "count": 15,
+          "averageRating": 7.93
+        },
+        {
+          "year": 1985,
+          "count": 13,
+          "averageRating": 8.15
+        },
+        {
+          "year": 1986,
+          "count": 11,
+          "averageRating": 7.27
+        },
+        {
+          "year": 1987,
+          "count": 19,
+          "averageRating": 7.47
+        },
+        {
+          "year": 1988,
+          "count": 14,
+          "averageRating": 8.07
+        },
+        {
+          "year": 1989,
+          "count": 15,
+          "averageRating": 7.93
+        },
+        {
+          "year": 1990,
+          "count": 15,
+          "averageRating": 7.33
+        },
+        {
+          "year": 1991,
+          "count": 22,
+          "averageRating": 7.41
+        },
+        {
+          "year": 1992,
+          "count": 27,
+          "averageRating": 7.63
+        },
+        {
+          "year": 1993,
+          "count": 26,
+          "averageRating": 7.12
+        },
+        {
+          "year": 1994,
+          "count": 27,
+          "averageRating": 7.70
+        },
+        {
+          "year": 1995,
+          "count": 42,
+          "averageRating": 7.45
+        },
+        {
+          "year": 1996,
+          "count": 26,
+          "averageRating": 7.50
+        },
+        {
+          "year": 1997,
+          "count": 43,
+          "averageRating": 7.72
+        },
+        {
+          "year": 1998,
+          "count": 35,
+          "averageRating": 7.37
+        },
+        {
+          "year": 1999,
+          "count": 41,
+          "averageRating": 7.90
+        },
+        {
+          "year": 2000,
+          "count": 46,
+          "averageRating": 7.43
+        },
+        {
+          "year": 2001,
+          "count": 53,
+          "averageRating": 7.21
+        },
+        {
+          "year": 2002,
+          "count": 44,
+          "averageRating": 6.98
+        },
+        {
+          "year": 2003,
+          "count": 47,
+          "averageRating": 7.13
+        },
+        {
+          "year": 2004,
+          "count": 53,
+          "averageRating": 7.51
+        },
+        {
+          "year": 2005,
+          "count": 58,
+          "averageRating": 7.21
+        },
+        {
+          "year": 2006,
+          "count": 52,
+          "averageRating": 7.40
+        },
+        {
+          "year": 2007,
+          "count": 75,
+          "averageRating": 7.07
+        },
+        {
+          "year": 2008,
+          "count": 94,
+          "averageRating": 7.00
+        },
+        {
+          "year": 2009,
+          "count": 67,
+          "averageRating": 7.67
+        },
+        {
+          "year": 2010,
+          "count": 74,
+          "averageRating": 7.34
+        },
+        {
+          "year": 2011,
+          "count": 94,
+          "averageRating": 7.52
+        },
+        {
+          "year": 2012,
+          "count": 77,
+          "averageRating": 7.26
+        },
+        {
+          "year": 2013,
+          "count": 89,
+          "averageRating": 7.34
+        },
+        {
+          "year": 2014,
+          "count": 83,
+          "averageRating": 7.37
+        },
+        {
+          "year": 2015,
+          "count": 71,
+          "averageRating": 7.35
+        },
+        {
+          "year": 2016,
+          "count": 69,
+          "averageRating": 7.45
+        },
+        {
+          "year": 2017,
+          "count": 74,
+          "averageRating": 7.16
+        },
+        {
+          "year": 2018,
+          "count": 50,
+          "averageRating": 7.14
+        },
+        {
+          "year": 2019,
+          "count": 56,
+          "averageRating": 7.36
+        },
+        {
+          "year": 2020,
+          "count": 26,
+          "averageRating": 7.46
+        },
+        {
+          "year": 2021,
+          "count": 38,
+          "averageRating": 7.47
+        },
+        {
+          "year": 2022,
+          "count": 11,
+          "averageRating": 6.55
+        }
+      ],
+      "rateYearCount": [
+        {
+          "year": 2009,
+          "count": 27,
+          "averageRating": 7.67
+        },
+        {
+          "year": 2010,
+          "count": 739,
+          "averageRating": 7.34
+        },
+        {
+          "year": 2011,
+          "count": 321,
+          "averageRating": 7.52
+        },
+        {
+          "year": 2012,
+          "count": 209,
+          "averageRating": 7.26
+        },
+        {
+          "year": 2013,
+          "count": 240,
+          "averageRating": 7.34
+        },
+        {
+          "year": 2014,
+          "count": 100,
+          "averageRating": 7.37
+        },
+        {
+          "year": 2015,
+          "count": 99,
+          "averageRating": 7.35
+        },
+        {
+          "year": 2016,
+          "count": 75,
+          "averageRating": 7.45
+        },
+        {
+          "year": 2017,
+          "count": 87,
+          "averageRating": 7.16
+        },
+        {
+          "year": 2018,
+          "count": 78,
+          "averageRating": 7.14
+        },
+        {
+          "year": 2019,
+          "count": 61,
+          "averageRating": 7.36
+        },
+        {
+          "year": 2020,
+          "count": 65,
+          "averageRating": 7.46
+        },
+        {
+          "year": 2021,
+          "count": 49,
+          "averageRating": 7.47
+        },
+        {
+          "year": 2022,
+          "count": 49,
+          "averageRating": 6.55
+        }
+      ],
+      "mostWatchedYear": {
+        "year": 2008,
+        "count": 94,
+        "averageRating": 7.00
+      },
+      "mostWatchedGenres": "Action, Comedy, Crime, Thriller, Drama",
+      "mostWatchedDirectors": [
+        {
+          "name": "Quentin Tarantino",
+          "count": 13,
+          "titles": [
+            {
+              "title": "Reservoir Dogs",
+              "year": 1992,
+              "userRating": 10
+            },
+            {
+              "title": "Pulp Fiction",
+              "year": 1994,
+              "userRating": 10
+            },
+            {
+              "title": "Four Rooms",
+              "year": 1995,
+              "userRating": 4
+            },
+            {
+              "title": "Jackie Brown",
+              "year": 1997,
+              "userRating": 7
+            },
+            {
+              "title": "Kill Bill: Vol. 1",
+              "year": 2003,
+              "userRating": 10
+            },
+            {
+              "title": "Kill Bill: Vol. 2",
+              "year": 2004,
+              "userRating": 7
+            },
+            {
+              "title": "Sin City",
+              "year": 2005,
+              "userRating": 10
+            },
+            {
+              "title": "Death Proof",
+              "year": 2007,
+              "userRating": 7
+            },
+            {
+              "title": "Grindhouse",
+              "year": 2007,
+              "userRating": 7
+            },
+            {
+              "title": "Inglourious Basterds",
+              "year": 2009,
+              "userRating": 8
+            },
+            {
+              "title": "Django Unchained",
+              "year": 2012,
+              "userRating": 10
+            },
+            {
+              "title": "The Hateful Eight",
+              "year": 2015,
+              "userRating": 9
+            },
+            {
+              "title": "Once Upon a Time... in Hollywood",
+              "year": 2019,
+              "userRating": 9
+            }
+          ]
+        },
+        {
+          "name": "Martin Scorsese",
+          "count": 13,
+          "titles": [
+            {
+              "title": "Taxi Driver",
+              "year": 1976,
+              "userRating": 9
+            },
+            {
+              "title": "Raging Bull",
+              "year": 1980,
+              "userRating": 9
+            },
+            {
+              "title": "Michael Jackson: Bad",
+              "year": 1987,
+              "userRating": 6
+            },
+            {
+              "title": "Goodfellas",
+              "year": 1990,
+              "userRating": 9
+            },
+            {
+              "title": "Century of Cinema: A Personal Journey with Martin Scorsese Through American Movies",
+              "year": 1995,
+              "userRating": 9
+            },
+            {
+              "title": "Casino",
+              "year": 1995,
+              "userRating": 10
+            },
+            {
+              "title": "Gangs of New York",
+              "year": 2002,
+              "userRating": 9
+            },
+            {
+              "title": "The Aviator",
+              "year": 2004,
+              "userRating": 7
+            },
+            {
+              "title": "The Departed",
+              "year": 2006,
+              "userRating": 10
+            },
+            {
+              "title": "Shutter Island",
+              "year": 2010,
+              "userRating": 9
+            },
+            {
+              "title": "Hugo",
+              "year": 2011,
+              "userRating": 5
+            },
+            {
+              "title": "The Wolf of Wall Street",
+              "year": 2013,
+              "userRating": 9
+            },
+            {
+              "title": "The Irishman",
+              "year": 2019,
+              "userRating": 8
+            }
+          ]
+        },
+        {
+          "name": "Ridley Scott",
+          "count": 15,
+          "titles": [
+            {
+              "title": "Alien",
+              "year": 1979,
+              "userRating": 10
+            },
+            {
+              "title": "Blade Runner",
+              "year": 1982,
+              "userRating": 8
+            },
+            {
+              "title": "Black Rain",
+              "year": 1989,
+              "userRating": 6
+            },
+            {
+              "title": "Thelma & Louise",
+              "year": 1991,
+              "userRating": 9
+            },
+            {
+              "title": "G.I. Jane",
+              "year": 1997,
+              "userRating": 7
+            },
+            {
+              "title": "Gladiator",
+              "year": 2000,
+              "userRating": 10
+            },
+            {
+              "title": "Black Hawk Down",
+              "year": 2001,
+              "userRating": 8
+            },
+            {
+              "title": "Matchstick Men",
+              "year": 2003,
+              "userRating": 7
+            },
+            {
+              "title": "American Gangster",
+              "year": 2007,
+              "userRating": 10
+            },
+            {
+              "title": "Body of Lies",
+              "year": 2008,
+              "userRating": 8
+            },
+            {
+              "title": "Prometheus",
+              "year": 2012,
+              "userRating": 7
+            },
+            {
+              "title": "Exodus: Gods and Kings",
+              "year": 2014,
+              "userRating": 7
+            },
+            {
+              "title": "The Martian",
+              "year": 2015,
+              "userRating": 8
+            },
+            {
+              "title": "All the Money in the World",
+              "year": 2017,
+              "userRating": 6
+            },
+            {
+              "title": "House of Gucci",
+              "year": 2021,
+              "userRating": 6
+            }
+          ]
+        },
+        {
+          "name": "Steven Spielberg",
+          "count": 16,
+          "titles": [
+            {
+              "title": "Jaws",
+              "year": 1975,
+              "userRating": 7
+            },
+            {
+              "title": "Raiders of the Lost Ark",
+              "year": 1981,
+              "userRating": 9
+            },
+            {
+              "title": "E.T. the Extra-Terrestrial",
+              "year": 1982,
+              "userRating": 6
+            },
+            {
+              "title": "Indiana Jones and the Temple of Doom",
+              "year": 1984,
+              "userRating": 8
+            },
+            {
+              "title": "Indiana Jones and the Last Crusade",
+              "year": 1989,
+              "userRating": 10
+            },
+            {
+              "title": "Hook",
+              "year": 1991,
+              "userRating": 6
+            },
+            {
+              "title": "Jurassic Park",
+              "year": 1993,
+              "userRating": 7
+            },
+            {
+              "title": "Schindler's List",
+              "year": 1993,
+              "userRating": 9
+            },
+            {
+              "title": "The Lost World: Jurassic Park",
+              "year": 1997,
+              "userRating": 6
+            },
+            {
+              "title": "Saving Private Ryan",
+              "year": 1998,
+              "userRating": 10
+            },
+            {
+              "title": "Minority Report",
+              "year": 2002,
+              "userRating": 7
+            },
+            {
+              "title": "Catch Me If You Can",
+              "year": 2002,
+              "userRating": 9
+            },
+            {
+              "title": "The Terminal",
+              "year": 2004,
+              "userRating": 8
+            },
+            {
+              "title": "Indiana Jones and the Kingdom of the Crystal Skull",
+              "year": 2008,
+              "userRating": 6
+            },
+            {
+              "title": "Lincoln",
+              "year": 2012,
+              "userRating": 9
+            },
+            {
+              "title": "Bridge of Spies",
+              "year": 2015,
+              "userRating": 8
+            }
+          ]
+        },
+        {
+          "name": "Alfred Hitchcock",
+          "count": 17,
+          "titles": [
+            {
+              "title": "Rebecca",
+              "year": 1940,
+              "userRating": 8
+            },
+            {
+              "title": "Suspicion",
+              "year": 1941,
+              "userRating": 5
+            },
+            {
+              "title": "Saboteur",
+              "year": 1942,
+              "userRating": 8
+            },
+            {
+              "title": "Shadow of a Doubt",
+              "year": 1943,
+              "userRating": 8
+            },
+            {
+              "title": "Lifeboat",
+              "year": 1944,
+              "userRating": 9
+            },
+            {
+              "title": "Spellbound",
+              "year": 1945,
+              "userRating": 7
+            },
+            {
+              "title": "Notorious",
+              "year": 1946,
+              "userRating": 8
+            },
+            {
+              "title": "Rope",
+              "year": 1948,
+              "userRating": 9
+            },
+            {
+              "title": "Strangers on a Train",
+              "year": 1951,
+              "userRating": 7
+            },
+            {
+              "title": "Dial M for Murder",
+              "year": 1954,
+              "userRating": 10
+            },
+            {
+              "title": "Rear Window",
+              "year": 1954,
+              "userRating": 10
+            },
+            {
+              "title": "To Catch a Thief",
+              "year": 1955,
+              "userRating": 7
+            },
+            {
+              "title": "The Wrong Man",
+              "year": 1956,
+              "userRating": 7
+            },
+            {
+              "title": "Vertigo",
+              "year": 1958,
+              "userRating": 8
+            },
+            {
+              "title": "North by Northwest",
+              "year": 1959,
+              "userRating": 10
+            },
+            {
+              "title": "Psycho",
+              "year": 1960,
+              "userRating": 10
+            },
+            {
+              "title": "The Birds",
+              "year": 1963,
+              "userRating": 8
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

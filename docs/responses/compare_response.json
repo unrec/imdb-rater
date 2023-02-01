@@ -1,0 +1,160 @@
+{
+  "data": {
+    "compare": [
+      {
+        "title": "Friends",
+        "year": 1994,
+        "runtime": 22,
+        "genres": "Comedy, Romance",
+        "votes": 987878
+      },
+      {
+        "title": "Forrest Gump",
+        "year": 1994,
+        "runtime": 142,
+        "genres": "Drama, Romance",
+        "votes": 2060935
+      },
+      {
+        "title": "Toy Story",
+        "year": 1995,
+        "runtime": 81,
+        "genres": "Animation, Adventure, Comedy, Family, Fantasy",
+        "votes": 988821
+      },
+      {
+        "title": "Inception",
+        "year": 2010,
+        "runtime": 148,
+        "genres": "Action, Adventure, Sci-Fi, Thriller",
+        "votes": 2332820
+      },
+      {
+        "title": "Hodejegerne",
+        "year": 2011,
+        "runtime": 100,
+        "genres": "Action, Crime, Thriller",
+        "votes": 102739
+      },
+      {
+        "title": "Django Unchained",
+        "year": 2012,
+        "runtime": 165,
+        "genres": "Drama, Western",
+        "votes": 1540775
+      },
+      {
+        "title": "Band of Brothers",
+        "year": 2001,
+        "runtime": 594,
+        "genres": "Drama, History, War",
+        "votes": 465856
+      },
+      {
+        "title": "Inside Out",
+        "year": 2015,
+        "runtime": 95,
+        "genres": "Animation, Adventure, Comedy, Drama, Family, Fantasy",
+        "votes": 709628
+      },
+      {
+        "title": "Nightcrawler",
+        "year": 2014,
+        "runtime": 117,
+        "genres": "Crime, Drama, Thriller",
+        "votes": 544386
+      },
+      {
+        "title": "Ray",
+        "year": 2004,
+        "runtime": 152,
+        "genres": "Biography, Drama, Music",
+        "votes": 148685
+      },
+      {
+        "title": "Black Mirror: White Christmas",
+        "year": 2014,
+        "runtime": 73,
+        "genres": "Drama, Mystery, Sci-Fi, Thriller",
+        "votes": 58597
+      },
+      {
+        "title": "Toy Story 3",
+        "year": 2010,
+        "runtime": 103,
+        "genres": "Animation, Adventure, Comedy, Family, Fantasy",
+        "votes": 832890
+      },
+      {
+        "title": "The Prestige",
+        "year": 2006,
+        "runtime": 130,
+        "genres": "Drama, Mystery, Sci-Fi, Thriller",
+        "votes": 1325062
+      },
+      {
+        "title": "Gisaengchung",
+        "year": 2019,
+        "runtime": 132,
+        "genres": "Drama, Thriller",
+        "votes": 789594
+      },
+      {
+        "title": "The Godfather",
+        "year": 1972,
+        "runtime": 175,
+        "genres": "Crime, Drama",
+        "votes": 1843269
+      },
+      {
+        "title": "The Godfather Part II",
+        "year": 1974,
+        "runtime": 202,
+        "genres": "Crime, Drama",
+        "votes": 1262779
+      },
+      {
+        "title": "Moskva slezam ne verit",
+        "year": 1980,
+        "runtime": 150,
+        "genres": "Comedy, Drama, Romance",
+        "votes": 13125
+      },
+      {
+        "title": "Star Trek",
+        "year": 2009,
+        "runtime": 127,
+        "genres": "Action, Adventure, Sci-Fi",
+        "votes": 603820
+      },
+      {
+        "title": "Mad Men",
+        "year": 2007,
+        "runtime": 47,
+        "genres": "Drama",
+        "votes": 238780
+      },
+      {
+        "title": "Breaking Bad",
+        "year": 2008,
+        "runtime": 49,
+        "genres": "Crime, Drama, Thriller",
+        "votes": 1859770
+      },
+      {
+        "title": "Nuovo Cinema Paradiso",
+        "year": 1988,
+        "runtime": 155,
+        "genres": "Drama, Romance",
+        "votes": 260706
+      },
+      {
+        "title": "Revolutionary Road",
+        "year": 2008,
+        "runtime": 119,
+        "genres": "Drama, Romance",
+        "votes": 214099
+      }
+    ]
+  }
+}

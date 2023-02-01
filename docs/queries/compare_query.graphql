@@ -1,0 +1,15 @@
+query {
+    compare(
+        aFilepath: "ratings/ratings_andrei.csv",
+        bFilepath: "ratings/ratings_lena.csv",
+        params: {
+            rating: 10
+        }
+    ) {
+        title
+        year
+        runtime
+        genres
+        votes
+    }
+}

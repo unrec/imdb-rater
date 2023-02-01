@@ -1,0 +1,55 @@
+query {
+    statistics(filepath: "ratings/ratings_andrei.csv") {
+
+        releaseYearRated {
+            year
+            count
+            averageRating
+        }
+
+        averageDeviation
+
+        ratingCount {
+            rating
+            count
+        }
+
+        totalItems
+        totalRuntime
+
+        typesCount {
+            titleType
+            count
+        }
+
+        releaseYearCount {
+            year
+            count
+            averageRating
+        }
+
+        rateYearCount {
+            year
+            count
+            averageRating
+        }
+
+        mostWatchedYear {
+            year
+            count
+            averageRating
+        }
+
+        mostWatchedGenres
+
+        mostWatchedDirectors {
+            name
+            count
+            titles {
+                title
+                year
+                userRating
+            }
+        }
+    }
+}
